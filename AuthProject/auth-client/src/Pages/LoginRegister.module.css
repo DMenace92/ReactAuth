@@ -1,0 +1,25 @@
+.mainSignonContainer{
+    display: flex;
+    justify-content: center;
+ }
+ .LoginTitle{
+     color:black;
+     text-align: center;
+ }
+ .loginComponentForm{
+     margin-top:100px;
+     border:1px dashed rgba(0, 0, 0, 0.454);
+     box-shadow: 12px 12px 2px 1px rgba(82, 82, 82, 0.084);
+     border-radius: 25px;
+     width:30vw;
+     height:50vh;
+     display: flex;
+     justify-content: center;
+ }
+ .loginForm{
+     /* margin-top:120px; */
+     display: flex;
+     flex-direction: column;
+     gap:15px;
+     /* width:30%; */
+ }
