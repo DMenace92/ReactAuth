@@ -1,5 +1,5 @@
 import LoginRegister from '../Pages/LoginRegister'
-import { login } from '../Actions/LoginActions'
+import { login, register } from '../Actions/LoginActions'
 import { connect } from 'react-redux'
 
 const mapStateToProps = (log) => {
@@ -13,6 +13,9 @@ const mapDispatchToProps = (dispatch) => {
     login: (log) => {
       dispatch(login(log))
     },
+    register:(log)=>{
+      dispatch(register(log))
+    }
   }
 }
 

@@ -1,4 +1,4 @@
-import { L_S, L_L, L_E } from '../Actions/LoginActions'
+import { L_S, L_L, L_E, R_L, R_S, R_E } from '../Actions/LoginActions'
 import { useNavigate } from 'react-router-dom'
 const navigate = useNavigate
 
@@ -34,6 +34,20 @@ const LoginReducers = (state = initState, action) => {
         ...state,
         logLoading: false,
         logError: true,
+      }
+    case R_L:
+      return{
+        ...state,
+        logLoading:true
+      }
+    case R_S:
+      return{
+        log:[...state.log, action.payload]
+      }
+    case R_E:
+      return{
+        ...state,
+        logError: true
       }
     default:
       return state
